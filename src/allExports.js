@@ -4,13 +4,13 @@ export const logo = () => {
   return Logo;
 };
 
-export const ImageHolder = ({ image, styles, imageStyles }) => {
+export const ImageHolder = ({ image, styles, imageStyles, className }) => {
   return (
     <div style={styles} className="imageContainer">
       <img
         src={image}
         style={{ backgroundSize: "cover" }}
-        className="imageInContainer"
+        className={`imageInContainer ${className}`}
       />
     </div>
   );
